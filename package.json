@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "First React App ",
+  "scripts": {
+    "test": "jest",
+    "build" :"npx parcel index.html" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasanth-2604/React-app.git"
+  },
+  "author": "Vasanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasanth-2604/React-app/issues"
+  },
+  "homepage": "https://github.com/vasanth-2604/React-app#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
