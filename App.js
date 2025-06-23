@@ -723,19 +723,18 @@ const resFromApi= [
 
 const RestaurantCard = (props)=>{
      
-  const {resObj} = props;
-  console.log(resObj)
-
+ //so props have resObj propert which is itself an object  => {resObj:{}} so we destructure the props obj and put the resObj into na new variable
+const {resObj} = props
+const {name,cuisines,avgRating,sla,cloudinaryImageId} = resObj.info
     return (
 
         <div className="res-card">
             <div className="res-info">
-                <img className="lo" src = {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resObj.info.cloudinaryImageId}/>
-                <h2>{resObj.info.name}</h2>
-                <h3>{resObj.info.cuisines.join
-                    (",")}</h3>
-                <h3>{resObj.info.avgRating}</h3>
-                <h3>{resObj.info.sla.deliveryTime} Minutes</h3>
+                <img className="lo" src = {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}/>
+                <h2>{name}</h2>
+                <h3>{cuisines.join(",")}</h3>
+                <h3>{avgRating} Ratings</h3>
+                <h3>{sla.deliveryTime} Minutes</h3>
                 <button style={{textAlign:"center",marginTop :"5px"}}>Order Now!</button>
             </div>
         </div>
@@ -752,6 +751,7 @@ const Body = ()=>{
              <div className = "search-container">Search bar</div>
              <div className="res-container">
                  {resFromApi.map((restaurant)=>{
+
                    return <RestaurantCard resObj = {restaurant} key={restaurant.info.id}></RestaurantCard>
                  })}
              </div>
