@@ -1,3 +1,9 @@
+@import "tailwindcss";
+
+/* * {
+    box-sizing: border-box;
+  }
+
 #header-container{
     display: flex;
     justify-content: space-between;
@@ -20,17 +26,17 @@
 }
 
 .logo{
-    width:150px
+    width:240px
 }
 
 .res-card{
     display: grid;
-    margin: 5px;
+   
     overflow-wrap: break-word;
     white-space: normal;
-    width : 280px;
+    width : 250px;
     overflow: hidden;
-    
+    height: 450px;
     
 
 }
@@ -42,22 +48,32 @@
 
 .res-info{
     display: grid;
-    padding: 6px;
+    padding: 5px;
     overflow-wrap: break-word;  
     word-wrap: break-word;  
+    width:100%;
+    overflow: hidden;
+    
+    
 
 }
 
 h2,h3{
-    margin: 5px;
-    overflow-wrap: break-word; 
-   
+    
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        margin-top: 2px;
+      
 
+}
+.order{
+    padding: 0px;
 }
 
 .lo{
-    width:220px;
-    height: 220px;
+    width:230px;
+    height: 185px;
 }
 
 .res-container{
@@ -69,3 +85,21 @@ h2,h3{
 
 
 }
+
+.filter-btn{
+   
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 4px;
+    cursor: pointer;
+    
+}
+.filter-container{
+    display: flex;
+    gap: 5px;
+}
+
+.menu-info{
+    display: flex;
+    flex-direction: column;
+} */
